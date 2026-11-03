@@ -1,0 +1,31 @@
+{
+  "name": "@kone_h/arcade-core",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Pure 2048 game logic for the arcade.",
+  "license": "MIT",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "files": [
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kone-H/arcade-core.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "vitest run"
+  },
+  "keywords": [
+    "2048",
+    "game"
+  ],
+  "author": "Kehan Huang",
+  "devDependencies": {
+    "vitest": "^5.0.5"
+  }
+}
