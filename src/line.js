@@ -2,7 +2,6 @@
 
 /**
  * Slides one line toward index 0 and merges equal neighbours once each.
- * Example: [2, 2, 2, 2] -> { line: [4, 4, 0, 0], points: 8 }
  * @param {number[]} line
  * @returns {{ line: number[], points: number }}
  */
