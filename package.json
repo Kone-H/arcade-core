@@ -1,6 +1,6 @@
 {
   "name": "@kone_h/arcade-core",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "description": "Pure 2048 game logic for the arcade.",
   "license": "MIT",
