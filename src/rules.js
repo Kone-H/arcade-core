@@ -71,7 +71,9 @@ export function spawn(board, rng = Math.random) {
   });
   if (empty.length === 0) return next;
 
-  const [row, col] = empty[Math.floor(rng() * empty.length)];
+  // clamp so an rng that returns exactly 1 still picks the last empty cell
+  const pick = Math.min(Math.floor(rng() * empty.length), empty.length - 1);
+  const [row, col] = empty[pick];
   next[row][col] = rng() < 0.9 ? 2 : 4;
   return next;
 }
