@@ -36,7 +36,7 @@ A `Direction` is `'up' | 'down' | 'left' | 'right'`. No function changes its inp
 | Function | Returns |
 | :--- | :--- |
 | `move(board, direction)` | A new board with every tile slid toward `direction`. Equal neighbours merge once each (`2 2 2 2` becomes `4 4`). |
-| `spawn(board, rng = Math.random)` | A new board with a `2` (90%) or a `4` (10%) in a random empty cell. `rng` must return a number in `[0, 1)`. A full board comes back unchanged. |
+| `spawn(board, rng = Math.random)` | A new board with a `2` (50%) or a `4` (50%) in a random empty cell. `rng` must return a number in `[0, 1)`. A full board comes back unchanged. |
 | `canMove(board, direction)` | `true` if `move(board, direction)` would change the board. |
 | `hasMoves(board)` | `true` if any direction would change the board, `false` when the game is over. |
 | `scoreMove(board, direction)` | The points that move earns: the sum of every tile a merge creates. |

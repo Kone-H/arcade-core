@@ -66,6 +66,7 @@ export function readLines(board, direction) {
 export function writeLines(lines, direction) {
   const size = lines.length;
   const board = Array.from({ length: size }, () => Array(size).fill(0));
+  // write back to a new board
   lines.forEach((line, lineIndex) => {
     line.forEach((value, index) => {
       const [row, col] = cellAt(lineIndex, index, size, direction);
